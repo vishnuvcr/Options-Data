@@ -1,0 +1,52 @@
+[
+  {
+    "name": "NSE historical derivatives reports",
+    "canonical_url": "https://www.nseindia.com/all-reports-derivatives",
+    "source_type": "official_archive",
+    "surfaces": ["futures", "options", "open_interest", "settlement"],
+    "license": "RESTRICTED_BY_TERMS",
+    "rights_status": "restricted",
+    "evidence_url": "https://www.nse.in/static/nse-terms-of-use",
+    "reason": "Official reference; do not automate collection without permission."
+  },
+  {
+    "name": "NSE historical index data",
+    "canonical_url": "https://www.nseindia.com/all-reports",
+    "source_type": "official_archive",
+    "surfaces": ["spot", "VIX"],
+    "license": "RESTRICTED_BY_TERMS",
+    "rights_status": "restricted",
+    "evidence_url": "https://www.nse.in/static/nse-terms-of-use",
+    "reason": "Official reference; do not automate collection without permission."
+  },
+  {
+    "name": "NIFTY Indices historical data",
+    "canonical_url": "https://www.niftyindices.com/reports/historical-data",
+    "source_type": "official_archive",
+    "surfaces": ["spot", "total_return", "constituents"],
+    "license": "VERIFY",
+    "rights_status": "review_required",
+    "evidence_url": "https://www.niftyindices.com/reports/historical-data",
+    "reason": "Verify intended research and redistribution use before download."
+  },
+  {
+    "name": "NSE EOD and historical data product",
+    "canonical_url": "https://www.nseindia.com/static/market-data/eod-historical-data-subscription",
+    "source_type": "official_data_product",
+    "surfaces": ["spot", "futures", "options", "order_trade"],
+    "license": "COMMERCIAL_LICENSE_REQUIRED",
+    "rights_status": "restricted",
+    "evidence_url": "https://www.nseindia.com/static/market-data/eod-historical-data-subscription",
+    "reason": "Use only after obtaining the appropriate agreement."
+  },
+  {
+    "name": "NIFTY 50 intraday OHLC repository",
+    "canonical_url": "https://github.com/technovusin/nifty50-historical-data",
+    "source_type": "repository",
+    "surfaces": ["spot", "intraday_1m", "intraday_15s"],
+    "license": "VERIFY_REPOSITORY_AND_UPSTREAM",
+    "rights_status": "review_required",
+    "evidence_url": "https://github.com/technovusin/nifty50-historical-data",
+    "reason": "Candidate only: confirm repository and upstream data rights."
+  }
+]
