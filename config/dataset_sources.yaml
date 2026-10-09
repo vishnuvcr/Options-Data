@@ -1,0 +1,22 @@
+pinned_candidate:
+  source_id: hf_thetrademarkk_india_index_options_1m_51ca58c
+  canonical_url: https://huggingface.co/datasets/thetrademarkk/india-index-options-1m
+  revision: 51ca58c
+  rights_status: review_required
+  expected_layout:
+    spot: index/NIFTY.parquet
+    options: options/NIFTY/*.parquet
+  notes: >-
+    Referenced by vishnuvcr/Daily-Options. Verify the dataset card, licence,
+    and underlying exchange-data permissions before downloading or using it.
+
+manual_input:
+  futures_csv_required_columns:
+    - timestamp
+    - expiry_date
+    - last
+    - bid
+    - ask
+    - volume
+    - open_interest
+    - source_id
