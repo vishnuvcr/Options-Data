@@ -8,6 +8,12 @@ on:
         required: true
         default: "2000"
         type: string
+  push:
+    branches: [main]
+    paths:
+      - "config/discovery_queries.json"
+      - "tools/discover_sources.py"
+      - ".github/workflows/discover-sources.yml"
 
 permissions:
   contents: write
@@ -21,7 +27,8 @@ jobs:
       - name: Collect public-repository metadata only
         env:
           GH_TOKEN: ${{ github.token }}
-        run: python tools/discover_sources.py --target "${{ inputs.target }}"
+          TARGET: ${{ inputs.target || '2000' }}
+        run: python tools/discover_sources.py --target "$TARGET"
       - name: Commit resumable catalog
         run: |
           git config user.name "github-actions[bot]"
